@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --starship: #f3db4c;
+  --mine-shaft: #343434;
+  --husk: #b2a443;
+  --sycamore: #94843c;
+  --white: #fff;
+  --max-width: 1400px;
+  --padding: 8px;
+  --margin: 10px;
+}
+
+::selection {
+  background: var(--sycamore);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--mine-shaft);
+  line-height: 24px;
+  font-size: 16px;
+}
+
+header {
+  text-align: center;
+  color: var(--starship);
+  border-bottom: solid 1px var(--sycamore);
+  margin-bottom: var(--margin);
+}
+
+h1,
+h2 {
+  padding: var(--padding);
+  color: var(--starship);
+}
+
+section {
+  padding: var(--padding);
+}
+
+a {
+  color: var(--starship);
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--white);
+}
+
+p::first-letter {
+  color: var(--starship);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+ul.list > li.item {
+  cursor: pointer;
+  color: var(--starship);
+}
+
+li.item:hover a {
+  color: var(--mine-shaft);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding) 0 var(--padding);
+}
+
+.card {
+  width: 350px;
+  border: solid 1px var(--sycamore);
+  margin: var(--margin) auto var(--margin) auto;
+  padding: var(--padding);
+}
+
+.list {
+  text-align: center;
+}
+
+.item {
+  border-bottom: solid 1px var(--sycamore);
+  transition: 1s;
+  font-size: 1.2rem;
+}
+
+.item:hover {
+  background: var(--husk);
+  color: var(--mine-shaft);
+}
+
+.item:last-child {
+  border: none;
+}
+
+ul.list > li.item a:visited {
+  color: var(--husk);
+}
+
+.bg {
+  background: var(--white);
+}
+
+input {
+  padding: var(--padding);
+  border: solid 0.5px var(--starship);
+  border-radius: 6px;
+  outline: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-bottom: var(--margin);
+  display: block;
+  width: 100%;
+}
+
+input[type="checkbox"] {
+  display: inline-block;
+}
+label {
+  color: var(--white);
+}
+input[type="checkbox"]:checked + label {
+  color: var(--sycamore);
+}
+input[type="checkbox"]:checked {
+  height: 20px;
+  width: 20px;
+}
+
+form {
+  background: var(--mine-shaft);
+  transition: 1s;
+}
+
+form:focus-within {
+  background: var(--husk);
+}
+
+form:focus-within > label {
+  color: var(--mine-shaft);
+}
